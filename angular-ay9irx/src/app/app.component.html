@@ -1,0 +1,29 @@
+<h1>
+	{{name}}
+</h1>
+
+<p [style.color]='myColor'>
+	Start editing to see some magic happen :)
+</p>
+
+<a [href]="myUrl">Visit here</a>
+
+<input type="text" [(ngModel)]="name">
+
+<h3 *ngIf = "shouldDisplay">
+  if directive
+</h3>
+
+<button (click)= "show()">Display</button>
+
+<div *ngFor = "let list of myList">
+  
+  <p>
+    {{list}}
+  </p>
+
+</div>
+
+<div *ngFor="let object of data">
+  <a [href]="object.link" target="_blank"> {{object.n}} </a>       
+</div>
